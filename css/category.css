@@ -69,10 +69,9 @@ body {
   background-color: #eee;
 }
 .category-body .body-right {
-  /*position:relative;*/
-  float: left;
+  position:relative;
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #eee;
   /*padding: 10px;*/
 }
@@ -196,7 +195,7 @@ body {
   height: 14px;
   line-height:14px;
   text-align:center;
-  background-color: blue;
+  background-color: lightblue;
   color:#fff;
 }
 .back{

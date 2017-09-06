@@ -86,6 +86,7 @@ function swipeLeft(){
     var moveY=0;
     var distanceY=0;
     leftBox.addEventListener('touchstart',function(e){
+        e.preventDefault();
         startY= e.targetTouches[0].clientY;
     });
 
