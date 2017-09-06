@@ -20,8 +20,8 @@ function swipeLeft(){
     var maxSwipe=maxTop+240;
     var minSwipe=minTop-240;
     var addTransition=function(){
-        ul.style.webkitTransition='transform 0.4s';
-        ul.style.transition='transform 0.4s';
+        ul.style.webkitTransition='-webkit-transform 0.4s';
+        ul.style.transition='-webkit-transform 0.4s';
     }
     var removeTransition=function(){
         ul.style.webkitTransition='none';
