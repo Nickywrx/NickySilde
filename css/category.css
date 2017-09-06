@@ -69,9 +69,10 @@ body {
   background-color: #eee;
 }
 .category-body .body-right {
-  position:relative;
+  /*position:relative;*/
+  float: left;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #eee;
   /*padding: 10px;*/
 }
