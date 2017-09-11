@@ -10,7 +10,7 @@ function swipeLeft(){
     var leftBox=document.querySelector('.body-left');
     var ul=leftBox.querySelector('ul');
     var lis=ul.querySelectorAll('li');
-    var rightins=document.querySelectorAll('.right-in ul');
+    var rightins=$('.right-in ul');
     // console.log(lis);
     var currentY=0;
  
@@ -35,7 +35,6 @@ function swipeLeft(){
 
     itcast.tap(ul,function(event){
         var target= event.target.parentNode;
-        console.log(currentY);
         if($(target).text().length>4){
             alert(123);
         }
@@ -64,23 +63,10 @@ function swipeLeft(){
         setTranslateY(y);
 
         currentY=y; 
-    
-
-        if(currentY<-599){
-        $('.back').show()
-        $('.back').on('click',function(event){
-            var y=leftBox.offsetHeight-ul.offsetHeight;
-            addTransition();
-           
-            setTranslateY(y);
-
-            currentY=y; 
-            console.log(123);
-    })
-    }
 
     });
 
+ 
     
     var startY=0;
     var moveY=0;
@@ -129,3 +115,6 @@ function swipeLeft(){
     
     
 }
+$('.left-in').on('click',function(){
+    alert(123);
+})
